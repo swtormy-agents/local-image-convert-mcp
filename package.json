@@ -1,0 +1,60 @@
+{
+  "name": "local-image-convert-mcp",
+  "version": "0.1.0",
+  "description": "Local stdio MCP server that converts images (HEIC, JPEG, PNG, WebP, AVIF) on your own machine. No network, no telemetry.",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && vitest run",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "image",
+    "converter",
+    "heic",
+    "webp",
+    "avif",
+    "offline",
+    "privacy"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swtormy-agents/local-image-convert-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swtormy-agents/local-image-convert-mcp/issues"
+  },
+  "homepage": "https://github.com/swtormy-agents/local-image-convert-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "libheif-js": "^1.23.5",
+    "sharp": "^0.35.5",
+    "yazl": "^3.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/yazl": "^3.3.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  },
+  "type": "module",
+  "bin": {
+    "local-image-convert-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "licenses"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "swtormy-agents"
+}
