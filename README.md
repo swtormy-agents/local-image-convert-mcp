@@ -79,7 +79,7 @@ npm test   # builds, then runs unit tests and a stdio smoke test
 
 ## Website
 
-A free in-browser converter by the same team: https://noclaudkit.com/
+A free in-browser converter by the same team: [noclaudkit.com/image-converter](https://noclaudkit.com/image-converter/)
 
 ## Attribution and licences
 
